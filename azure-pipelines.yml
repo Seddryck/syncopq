@@ -9,9 +9,9 @@ steps:
 - script: 'gitversion /l console /output buildserver /updateAssemblyInfo'
   displayName: 'Run GitVersion'
 - task: NuGetToolInstaller@0
-  displayName: 'Use NuGet 4.4.1'
+  displayName: 'Use NuGet 5.4.0'
   inputs:
-    versionSpec: 4.4.1
+    versionSpec: '5.4.0'
 
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
@@ -21,8 +21,7 @@ steps:
 - task: VSBuild@1
   displayName: 'Build solution *.sln'
   inputs:
-    solution: '$(Parameters.solution)'
-    vsVersion: 15.0
+    solution: 'Syncopq.sln'
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
 
@@ -30,7 +29,7 @@ steps:
   displayName: 'VsTest - testAssemblies'
   inputs:
     testAssemblyVer2: 'Syncopq.Testing\bin\debug\Syncopq.Testing.dll'
-    vsTestVersion: 15.0
+    vsTestVersion: "Latest"
     codeCoverageEnabled: false
     diagnosticsEnabled: True
 
