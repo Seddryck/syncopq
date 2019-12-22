@@ -22,8 +22,6 @@ steps:
   displayName: 'Build solution *.sln'
   inputs:
     solution: 'Syncopq.sln'
-    platform: '$(BuildPlatform)'
-    configuration: '$(BuildConfiguration)'
 
 - task: VSTest@2
   displayName: 'VsTest - testAssemblies'
