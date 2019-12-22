@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Syncopq</id>
+    <version>$version$</version>
+    <authors>Seddryck</authors>
+    <owners>Seddryck</owners>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://github.com/Seddryck/Syncopq</projectUrl>
+    <icon>images\logo-2x.png</icon>
+    <iconUrl>https://raw.githubusercontent.com/Seddryck/Syncopq/gh-pages/img/logo-2x.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>This package contains the Syncopq dll</summary>
+    <description>This package contains the Syncopq dll. This package is not intended to be directly used by end-users but is provided to be used by third-party tools taking advantage of this dll.</description>
+    <copyright>Copyright 2019-$thisYear$</copyright>
+    <tags>Power BI</tags>
+    <repository type="git" url="https://github.com/Seddryck/Syncopq.git" />
+    <dependencies>
+       <group targetFramework=".NETFramework4.7">
+         $depList$
+       </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\..\logo-2x.png" target="images\" />
+    <file src="..\syncopq\lib\**" target="lib/" />
+  </files>
+</package>
