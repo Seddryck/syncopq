@@ -9,7 +9,7 @@ Write-Host "Calculating dependencies ..."
 
 $dependencies = @{}
 $solutionRoot = Join-Path ($root) ".."
-$projects = Get-ChildItem $solutionRoot | ?{ $_.PSIsContainer -and $_.Name -like "Syncopq.*" -and $_.Name -notLike "*.Testing*"} | select Name, FullName
+$projects = Get-ChildItem $solutionRoot | ?{ $_.PSIsContainer -and $_.Name -like "Syncopq*" -and $_.Name -notLike "*.Testing*"} | select Name, FullName
 foreach($proj in $projects)
 {
     $projName = $proj.name
@@ -52,7 +52,7 @@ If (Test-Path $lib)
 }
 new-item -Path $lib -ItemType directory
 new-item -Path $root\.nupkg -ItemType directory -force
-Copy-Item $root\..\Syncopq.Core\bin\Debug\Syncopq.Core.dll $lib
+Copy-Item $root\..\Syncopq\bin\Debug\Syncopq.dll $lib
 
 Write-Host "Setting .nuspec version tag to $version"
 
