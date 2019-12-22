@@ -1,5 +1,5 @@
 pool:
-  name: Hosted VS2019
+  name: Hosted VS2017
   demands:
   - msbuild
   - visualstudio
@@ -17,9 +17,6 @@ steps:
   displayName: 'NuGet restore'
   inputs:
     restoreSolution: '$(Parameters.solution)'
-
-- script: 'clone-extensions.cmd'
-  displayName: 'Clone extensions'
 
 - task: VSBuild@1
   displayName: 'Build solution *.sln'

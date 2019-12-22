@@ -11,17 +11,17 @@ build:
   verbosity: minimal
 after_build:
 - ps: >-
-    $nuget_version = "$env:GitVersion_NuGetVersionV2"
+    $nuget_version = "$env:GitVersion_NuGetVersion"
 
-    .\Packaging\package-Syncopq.ps1 $nuget_version
+    .\Packages\package-Syncopq.ps1 $nuget_version
 test_script:
 - cmd: >-
-    nunit3-console Syncopq.Testing.Core\bin\debug\Syncopq.Testing.Core.dll --result=myresults.xml;format=AppVeyor
+    nunit3-console Syncopq.Testing\bin\debug\Syncopq.Testing.dll --result=myresults.xml;format=AppVeyor
     
 artifacts:
-- path: Syncopq.Core\bin\Debug
+- path: Syncopq\bin\Debug
   name: Dll
-- path: Packaging\.nupkg\Syncopq.*.nupkg
+- path: .packages\.nupkg\Syncopq*.nupkg
   name: Nuget packages
 deploy:
 - provider: NuGet
