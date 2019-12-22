@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E31EAA8A-65B9-43EE-B4CB-A6637177DE56}"
+	ProjectSection(SolutionItems) = preProject
+		contributing.md = contributing.md
+		GitVersion.yml = GitVersion.yml
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		logo-2x.png = logo-2x.png
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncopq.Testing", "Syncopq.Testing\Syncopq.Testing.csproj", "{4576CFD9-0405-478B-8892-929DE9553ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncopq", "Syncopq\Syncopq.csproj", "{AE6DD23C-5565-4A83-8E22-534C08EC9BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4576CFD9-0405-478B-8892-929DE9553ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4576CFD9-0405-478B-8892-929DE9553ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4576CFD9-0405-478B-8892-929DE9553ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4576CFD9-0405-478B-8892-929DE9553ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6DD23C-5565-4A83-8E22-534C08EC9BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6DD23C-5565-4A83-8E22-534C08EC9BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6DD23C-5565-4A83-8E22-534C08EC9BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6DD23C-5565-4A83-8E22-534C08EC9BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60B8B459-6006-4F56-9DBE-BB15ADCD423B}
+	EndGlobalSection
+EndGlobal
