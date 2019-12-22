@@ -13,7 +13,7 @@ after_build:
 - ps: >-
     $nuget_version = "$env:GitVersion_NuGetVersion"
 
-    .\Packages\package-Syncopq.ps1 $nuget_version
+    .\.packages\package-Syncopq.ps1 $nuget_version
 test_script:
 - cmd: >-
     nunit3-console Syncopq.Testing\bin\debug\Syncopq.Testing.dll --result=myresults.xml;format=AppVeyor
