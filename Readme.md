@@ -1,7 +1,7 @@
 ![Logo](https://github.com/Seddryck/syncopq/raw/gh-pages/img/logo-2x.png)
 
 # Syncopq #
-
+ 
 Extract the Power Query/M code from a .pbix file, parse the content of this unique file to create one file by query and prepare a PowerShell script to deploy the queries to a Power BI Dataflow.
 
 **Dev. activity:** [![GitHub last commit](https://img.shields.io/github/last-commit/Seddryck/syncopq.svg)](https://github.com/Seddryck/Syncopq/releases/latest)
