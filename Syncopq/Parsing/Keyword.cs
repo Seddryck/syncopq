@@ -9,6 +9,7 @@ namespace Syncopq.Parsing
 {
     static class Keyword
     {
-        public static readonly Parser<string> Shared = Parse.IgnoreCase("Shared").Text().Token();
+        public static readonly Parser<string> Shared = Parse.String("shared").Text().Token();
+        public static readonly Parser<string> Section = Parse.String("section").Text().Token();
     }
 }
